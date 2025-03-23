@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Fish Westlands - Premium Seafood Restaurant in Nairobi</title>
+    <!-- Material Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/4.0.0/font/MaterialIcons-Regular.ttf" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-blue.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    
+    
+</head>
+<body>
+    <!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="material-icons" style="font-size: 40px; color: var(--primary-color);">restaurant</i>
+                <span class="logo-text">The Big Fish</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#gallery-preview">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="material-icons">dark_mode</i>
+                </button>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="material-icons">menu</i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Discover the Ocean's Finest Flavors</h1>
+            <p>Experience premium seafood dishes prepared by Kenya's top chefs with the freshest catch from our waters. Taste the difference at The Big Fish Westlands.</p>
+            <div class="hero-buttons">
+                <a href="javascript:void(0);" class="btn" onclick="downloadPDF()">View Our Menu</a>
+                <a href="#reservation" class="btn btn-outline">Reservation</a>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="/assets/images/Our Story.jpeg" alt="The Big Fish Restaurant Interior">
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">Our Story</span>
+                <h2>The Big Fish Experience</h2>
+                <p>Located in Westlands, Nairobi, Big Fish Restaurant is your go-to spot for fresh, affordable seafood with a Kenyan twist. 
+                    Founded by siblings Bradox Osumo, Maureen Adhiambo, and their family, it grew from a small venture into a beloved dining destination.
+                    <br>
+                    We specialize in whole tilapia—fried, steamed, or in coconut sauce—served with ugali, chips, or kachumbari. 
+                    Sourced fresh from Migori County, our generous portions and budget-friendly prices (Ksh 650-750 per meal) make us a standout in Nairobi’s food scene.
+                    
+                    Enjoy a warm, nautical-inspired ambiance or order via Bolt Food and Jumia. 
+                    Open daily from 8 AM to 9 PM, we’re here to serve up great seafood, great vibes, and great memories.
+                    <br>
+                    Karibu Big Fish.</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="material-icons feature-icon">verified</i>
+                        <span>Fresh Daily Seafood</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="material-icons feature-icon">verified</i>
+                        <span>Master Chefs</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="material-icons feature-icon">verified</i>
+                        <span>Sustainable Sourcing</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="material-icons feature-icon">verified</i>
+                        <span>Unique Flavors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Menu Section -->
+<section class="section menu" id="menu">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Our Specialties</span>
+            <h2>Delicious Seafood Menu</h2>
+            <p>Explore our carefully crafted dishes featuring the freshest seafood in Nairobi</p>
+        </div>
+        <div class="menu-categories">
+            <div class="menu-category" data-category="fish">Fish</div>
+            <div class="menu-category" data-category="sides">Sides</div>
+            <div class="menu-category" data-category="drinks">Drinks</div>
+            <div class="menu-category" data-category="beers">Beers</div>
+            <div class="menu-category" data-category="cocktails">Cocktails</div>
+        </div>
+        
+        <div class="menu-items">
+            <!-- Fish Dishes -->
+            <div class="menu-item fade-in" data-category="fish">
+                <img src="/assets/images/fish.jpeg" alt="Medium Dry Fish" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Medium Dry Fish</h3>
+                    <p class="menu-item-description">Served with ugali, skuma, and a side of kachumbari</p>
+                    <div class="menu-item-price">KSh 550</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="fish">
+                <img src="/assets/images/medium-wet-fish.jpeg" alt="Medium Wet Fish" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Medium Wet Fish</h3>
+                    <p class="menu-item-description">Served with ugali and skuma</p>
+                    <div class="menu-item-price">KSh 600</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="fish">
+                <img src="/assets/images/large-dry-fish.jpeg" alt="Large Dry Fish" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Large Dry Fish</h3>
+                    <p class="menu-item-description">Served with ugali, skuma, and a side of kachumbari</p>
+                    <div class="menu-item-price">KSh 650</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="fish">
+                <img src="/assets/images/large-wet-fish.jpeg" alt="Large Wet Fish" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Large Wet Fish</h3>
+                    <p class="menu-item-description">Served with ugali and skuma</p>
+                    <div class="menu-item-price">KSh 700</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="fish">
+                <img src="/assets/images/coconut-medium-fish.jpeg" alt="Coconut Medium Fish" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Coconut Medium Fish</h3>
+                    <p class="menu-item-description">Served with ugali and skuma</p>
+                    <div class="menu-item-price">KSh 700</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="fish">
+                <img src="/assets/images/coconut-large-fish.jpeg" alt="Coconut Large Fish" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Coconut Large Fish</h3>
+                    <p class="menu-item-description">Served with ugali and skuma</p>
+                    <div class="menu-item-price">KSh 800</div>
+                </div>
+            </div>
+
+            <!-- Sides -->
+            <div class="menu-item fade-in" data-category="sides">
+                <img src="/assets/images/kachumbari.jpeg" alt="Kachumbari" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Kachumbari</h3>
+                    <p class="menu-item-description">Fresh tomato and onion salad</p>
+                    <div class="menu-item-price">KSh 50</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="sides">
+                <img src="/assets/images/chipo.jpeg" alt="Chipo" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Chipo</h3>
+                    <p class="menu-item-description">Crispy fried potatoes</p>
+                    <div class="menu-item-price">KSh 200</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="sides">
+                <img src="/assets/images/chipo-masala.jpeg" alt="Chipo Masala" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Chipo Masala</h3>
+                    <p class="menu-item-description">Spicy fried potatoes</p>
+                    <div class="menu-item-price">KSh 250</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="sides">
+                <img src="/assets/images/mboga-ya-kienyeji.jpeg" alt="Mboga ya Kienyeji" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Mboga ya Kienyeji</h3>
+                    <p class="menu-item-description">Traditional vegetables</p>
+                    <div class="menu-item-price">KSh 100</div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-item fade-in" data-category="drinks">
+                <img src="/assets/images/soda.jpeg" alt="Soda" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Soda 300ml</h3>
+                    <p class="menu-item-description">Refreshing soda</p>
+                    <div class="menu-item-price">KSh 100</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="drinks">
+                <img src="/assets/images/mineral-water.jpeg" alt="Mineral Water" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Mineral Water 1 Litre</h3>
+                    <p class="menu-item-description">Pure drinking water</p>
+                    <div class="menu-item-price">KSh 100</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="drinks">
+                <img src="/assets/images/vanilla-milkshake.jpeg" alt="Vanilla Milkshake" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Vanilla Milkshake</h3>
+                    <p class="menu-item-description">Creamy vanilla milkshake</p>
+                    <div class="menu-item-price">KSh 250</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="drinks">
+                <img src="/assets/images/strawberry-milkshake.jpeg" alt="Strawberry Milkshake" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Strawberry Milkshake</h3>
+                    <p class="menu-item-description">Sweet strawberry milkshake</p>
+                    <div class="menu-item-price">KSh 250</div>
+                </div>
+            </div>
+
+            <!-- Beers -->
+            <div class="menu-item fade-in" data-category="beers">
+                <img src="/assets/images/desperados.jpeg" alt="Desperados" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Desperados</h3>
+                    <p class="menu-item-description">Tequila-flavored beer</p>
+                    <div class="menu-item-price">KSh 300</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="beers">
+                <img src="/assets/images/savannah.jpeg" alt="Savannah" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Savannah</h3>
+                    <p class="menu-item-description">Cider beer</p>
+                    <div class="menu-item-price">KSh 300</div>
+                </div>
+            </div>
+
+            <!-- Cocktails -->
+            <div class="menu-item fade-in" data-category="cocktails">
+                <img src="/assets/images/cosmopolitan.jpeg" alt="Cosmopolitan" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Cosmopolitan</h3>
+                    <p class="menu-item-description">Vodka, Cointreau, Lime Juice, Cranberry Juice</p>
+                    <div class="menu-item-price">KSh 500</div>
+                </div>
+            </div>
+
+            <div class="menu-item fade-in" data-category="cocktails">
+                <img src="/assets/images/mojito.jpeg" alt="Classic Mojito" class="menu-item-img">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Classic Mojito</h3>
+                    <p class="menu-item-description">Rum, Lime juice, Cinnamon, Mint leaves, Ginger Ale, Sugar Syrup</p>
+                    <div class="menu-item-price">KSh 500</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What Our Customers Say</span>
+                <h2>Customer Testimonials</h2>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-items">
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">The Big Fish has become our family's favorite restaurant in Westlands. The grilled tilapia is absolutely divine, and the service is always top-notch. We love the ambiance and the fresh seafood selection.</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="/assets/images/jane mwangi.jpeg" alt="Jane Mwangi">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Jane Mwangi</h4>
+                                    <p>Regular Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">As a seafood lover, I've tried many restaurants in Nairobi, but The Big Fish stands out. Their commitment to fresh ingredients and authentic flavors is unmatched. The lobster thermidor is simply the best I've ever had.</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="/assets/images/david ochieng.jpeg" alt="David Ochieng">
+                                </div>
+                                <div class="author-info">
+                                    <h4>David Ochieng</h4>
+                                    <p>Food Critic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">I hosted a business dinner at The Big Fish and everyone was impressed. The variety of seafood options satisfied everyone's preferences, and the staff was incredibly attentive. Will definitely come back again.</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="/assets/images/Sarah Kimani.jpeg" alt="Sarah Kimani">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Kimani</h4>
+                                    <p>Business Executive</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-controls">
+                    <div class="testimonial-dots">
+                        <span class="testimonial-dot active" data-index="0"></span>
+                        <span class="testimonial-dot" data-index="1"></span>
+                        <span class="testimonial-dot" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview Section -->
+    <section class="gallery-preview" id="gallery-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Gallery</span>
+                <h2>Visual Delights</h2>
+                <p>Take a peek at our restaurant ambiance and delicious dishes</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/assets/images/Restaurant Interior.jpeg" alt="Restaurant Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/images/seafood-platter.jpeg" alt="Seafood Platter">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/images/chef.jpeg" alt="Chef Preparing Food">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/images/outdoor.jpeg" alt="outoodr">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/images/Customers Dining.jpeg" alt="Customers Dining">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/images/fish.jpeg" alt="Seafood Grill">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Reservation Section -->
+     <section class="section reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-info fade-in">
+                    <h2>Book Your Table</h2>
+                    <p>Experience the best organic cuisine in Kenya. Reserve your table now and enjoy a memorable dining experience with your loved ones.</p>
+                    <p>For large groups or special events, please contact us directly at <strong>+254 743 854 585</strong>.</p>
+                </div>
+                
+                <div class="reservation-form fade-in">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" class="form-control" min="1" max="20" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" class="form-control" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn reservation-btn">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for exclusive offers, new menu items, and special events. Be the first to know about our seafood promotions!</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>The Big Fish is Westlands' premier seafood restaurant, committed to serving the freshest and most delicious seafood dishes in Kenya's capital.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul class="footer-links">
+                    <li>Monday - Friday: 11:00 AM - 10:00 PM</li>
+                    <li>Saturday: 10:00 AM - 11:00 PM</li>
+                    <li>Sunday: 10:00 AM - 9:00 PM</li>
+                    <li>Public Holidays: 12:00 PM - 9:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <div class="footer-contact">
+                    <span><i class="material-icons contact-icon">location_on</i> Westlands Road, Nairobi, Kenya</span>
+                    <span><i class="material-icons contact-icon">phone</i> +254 712 345 678</span>
+                    <span><i class="material-icons contact-icon">email</i> info@thebigfish.co.ke</span>
+                </div>
+                <div class="order-platforms" style="margin-top: 1rem;">
+                    <span>Order Online:</span>
+                    <a href="#" class="platform-icon" title="Order via Glovo">
+                        <i class="fab fa-glovo"></i>
+                    </a>
+                    <a href="#" class="platform-icon" title="Order via Bolt Food">
+                        <i class="fab fa-bolt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Big Fish Westlands. All Rights Reserved.</p>
+        </div>
+        <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/form-validation.js"></script>
+    </footer>
+</body>
+</html>
